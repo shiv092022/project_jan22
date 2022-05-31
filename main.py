@@ -6,5 +6,9 @@ app=Flask(__name__)
 def index():
     return "Default API"
 
+@app.route('prediction',methods=['GET','POST'])
+def prediction():
+    return "result"
+
 if __name__ == "main":
     app.run(debug=True)
